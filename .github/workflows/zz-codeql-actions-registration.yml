@@ -1,0 +1,10 @@
+# Registered so that CodeQL default setup can offer the GitHub Actions language on this fork.
+# It can only be started by hand, and the controller disables it right after adding it.
+name: codeql-actions-registration
+on: workflow_dispatch
+permissions: {}
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Nothing to do. This workflow only exists so that GitHub registers a workflow on this fork."
